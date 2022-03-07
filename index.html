@@ -4,7 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./public/style/reset.css" />
+    <link rel="stylesheet" href="./public/style/style.css" />
+    <title>빨간 우체통 마을 찾기</title>
   </head>
-  <body></body>
+  <body>
+    <main class="main">
+      <h1 class="main-title">마을 지도</h1>
+      <div class="map-container">
+        <section class="map">
+          <div class="town">
+            <h2 class="town-title">B</h2>
+            <div class="town">
+              <h2 class="town-title">C</h2>
+              <div class="town">
+                <h2 class="town-title">D</h2>
+                <span class="mailbox">📮</span>
+              </div>
+              <div class="town">
+                <h2 class="town-title">E</h2>
+              </div>
+            </div>
+          </div>
+          <div class="town">
+            <h2 class="town-title">K</h2>
+            <span class="mailbox">📮</span>
+            <div class="town">
+              <h2 class="town-title">L</h2>
+              <span class="mailbox">📮</span>
+            </div>
+          </div>
+        </section>
+        <aside class="info-container">
+          <button class="mailbox-btn" type="button">빨간 우체통 확인</button>
+          <div class="info">
+            <p>D, I, J 총 3개의 마을입니다.</p>
+            <p>우체통의 크기는 J, I, D 순 입니다.</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </body>
 </html>
