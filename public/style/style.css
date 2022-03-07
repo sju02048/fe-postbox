@@ -1,6 +1,61 @@
-* {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.main {
+  width: 800px;
+  height: 500px;
+  margin: 20px auto;
+  border: 1px solid;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.map-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  height: 90%;
+}
+
+.map {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  width: 75%;
+  border: 1px solid;
+}
+
+.town {
+  border: 3px solid #0076b9;
+  border-radius: 10px;
+}
+
+.info-container {
+  width: 25%;
+}
+
+.mailbox-btn {
+  background-color: #e00e0b;
+  border-radius: 5px;
+  color: white;
+  padding: 3px 5px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info * {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

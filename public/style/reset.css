@@ -1,10 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 html,
 body,
+h1,
+h2,
 a,
 ul,
 li,
@@ -36,4 +41,10 @@ body {
 
 ul {
   list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
 }
