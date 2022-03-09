@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+html,
+body,
+h1,
+h2,
+a,
+ul,
+li,
+article,
+aside,
+header,
+footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+.main {
+  width: 1000px;
+  height: 700px;
+  margin: 20px auto;
+  border: 1px solid;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.map-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  height: 90%;
+}
+
+.map {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  width: 75%;
+  border: 1px solid;
+}
+
+.map-cell {
+  position: relative;
+}
+
+.map-cell > .town {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+
+.town {
+  border: 3px solid #0076b9;
+  border-radius: 10px;
+  padding: 5px;
+  min-width: 30%;
+  min-height: 50%;
+  width: 70%;
+}
+
+.town.has-mailbox {
+  border-color: #e00e0b;
+}
+
+.town-title {
+  display: inline-block;
+}
+
+.mailbox {
+  font-size: 1rem;
+}
+
+.info-container {
+  width: 25%;
+}
+
+.mailbox-btn {
+  background-color: #e00e0b;
+  border-radius: 5px;
+  color: white;
+  padding: 3px 5px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info * {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+@import "./reset";
+@import "./variables";
+@import "./mixin";
+
+.main {
+  width: 1000px;
+  height: 700px;
+  margin: 20px auto;
+  border: 1px solid;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.map-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  height: 90%;
+}
+
+.map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 75%;
+  border: 1px solid;
+}
+
+.map-cell {
+  position: relative;
+  > .town {
+    position: absolute;
+
+    top: 20%;
+    left: 40%;
+  }
+}
+
+.town {
+  border: 3px solid #0076b9;
+  border-radius: 10px;
+  padding: 5px;
+  min-width: 30%;
+  min-height: 50%;
+  width: 70%;
+
+  &.has-mailbox {
+    border-color: $bg-mailbox;
+  }
+}
+
+.town-title {
+  display: inline-block;
+}
+
+.mailbox {
+  font-size: 1rem;
+}
+
+.info-container {
+  width: 25%;
+}
+
+.mailbox-btn {
+  background-color: $bg-mailbox;
+  border-radius: 5px;
+  color: white;
+  padding: 3px 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  * {
+    margin-top: 10px;
+  }
+}
